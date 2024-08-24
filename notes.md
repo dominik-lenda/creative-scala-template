@@ -1,6 +1,6 @@
 # Expressions and values
 
-Expressions describe programs, values are the results of evaluating expressions
+Expressions describe programs, values are the results of evaluated expressions.
 
 # Types
 Types describe set of values.
@@ -9,25 +9,26 @@ Example:
 1 + 2 is Int the value of this expression is one of the 4.2 billion values
 that computer understands to be integers ("whole numbers").
 
-We know type if expression without running it - type is a property of expression,
+We know types at compile-time because type is a property of expression,
 not a value.
 
 Compilation checks that a program is well structured: syntax is correct,
 types are checked.
 
 This syntax is incorrect:
-Blabla / \ "S
+`Blabla / \ "S`
 This is correct:
-val number = 5
+`val number = 5`
 
 You can do different things with different types. Not all operations are possible
 on all types. For example, type-checker rejects `1.toUpperCase` because you
-cannot make number upper case.
+cannot turn a number into upper case.
 
-Type-checking when compiling helps you avoid  many errors before running program.
+Type-checking helps you avoid  many errors before running program.
 
-Types in compilation and values at runtime. Types are not included at runtime,
-those are tags, which can be avoided to make programs efficient (type erasure).
+Types at compile-time and values at run-time
+
+Type tags are at run-time, not types. Tags can be ommited to make programs efficient (type erasure).
 
 # Recap
 Scala has expressions, values and types.
