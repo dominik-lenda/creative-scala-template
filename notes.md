@@ -3,6 +3,7 @@
 Expressions describe programs, values are the results of evaluated expressions.
 
 # Types
+
 Types describe set of values.
 
 Example:
@@ -30,9 +31,30 @@ Types at compile-time and values at run-time
 
 Type tags are at run-time, not types. Tags can be ommited to make programs efficient (type erasure).
 
+Types are a property of expressions so you can determine type of expression when
+its evaluation leads to error at run-time.
+
 # Recap
+
 Scala has expressions, values and types.
 Evaluation turns expressions into values.
 Evaluation is preceeded by compilation, which performs type-checking.
 
+
+# Literal expressions
+
+The simplest expressions are literals such as `3` or `"Strings of strings"`
+A literal evalutes to itself.
+
+# Objects
+
+Object is a grouping of data and operations. 
+All values are objects.
+Example: 
+`2` is an object. Data is 2 and operations are `+, -`, etc.
+
+Operations on objects are called methods.
+
+Syntax to call methods:
+`expression.method` or operator style such as `2 + 1` (`2.+(1)`)
 
